@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import './Join.css';
 
 export default function SignIn() {
-  const [name, setName] = useState('');
+  const [name, setName] = useState(''); //initialize with what this var "name" is going to have
   const [room, setRoom] = useState('');
 
   return (
