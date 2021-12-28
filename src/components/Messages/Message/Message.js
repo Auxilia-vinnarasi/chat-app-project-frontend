@@ -13,8 +13,8 @@ const Message = ({ message: { text, user }, name }) => {
     isSentByCurrentUser = true;
   }
 
-  return (
-    isSentByCurrentUser
+  return ( //we are going to use ternary operator here
+    isSentByCurrentUser /*If it is sentby current user then this rendered here */
       ? (
         <div className="messageContainer justifyEnd">
           <p className="sentText pr-10">{trimmedName}</p>
@@ -23,7 +23,7 @@ const Message = ({ message: { text, user }, name }) => {
           </div>
         </div>
         )
-        : (
+        : (//if it is not send by current user that is rendered something inside here
           <div className="messageContainer justifyStart">
             <div className="messageBox backgroundLight">
               <p className="messageText colorDark">{ReactEmoji.emojify(text)}</p>
